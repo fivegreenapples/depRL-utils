@@ -31,6 +31,7 @@ steps = df["train/steps"].to_numpy()
 rwd_metrics = [
     "forward_direction",
     "forward_lean",
+    "y_vel",
     "gaussian_vel",
     "gaussian_vel_x",
     "gaussian_vel_y",
@@ -40,6 +41,7 @@ rwd_metrics = [
     "joint_limit",
     "number_muscles",
     "smooth_exc",
+    "self_contact",
 ]
 
 rwd_data = [

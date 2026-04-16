@@ -29,6 +29,7 @@ steps = df["train/steps"].to_numpy()
 rwd_metrics = [
     "forward_direction",
     "forward_lean",
+    "y_vel",
     "gaussian_vel",
     "gaussian_vel_x",
     "gaussian_vel_y",
@@ -40,6 +41,7 @@ cost_metrics = [
     "joint_limit",
     "number_muscles",
     "smooth_exc",
+    "self_contact",
 ]
 test_rwd_cols = [f"test/rwd_metrics/{m}/mean" for m in rwd_metrics]
 test_cost_cols = [f"test/rwd_metrics/{m}/mean" for m in cost_metrics]
