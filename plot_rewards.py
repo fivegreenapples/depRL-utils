@@ -33,8 +33,8 @@ rwd_metrics = [
     "forward_lean",
     "y_vel",
     "gaussian_vel",
-    "gaussian_vel_x",
-    "gaussian_vel_y",
+    "gaussian_x_vel",
+    "gaussian_plateau_y_vel",
     "sideways_lean",
     "done",
     "grf",
@@ -42,6 +42,7 @@ rwd_metrics = [
     "number_muscles",
     "smooth_exc",
     "self_contact",
+    "x_drift",
 ]
 
 rwd_data = [

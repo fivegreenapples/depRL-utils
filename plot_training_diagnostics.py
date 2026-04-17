@@ -87,16 +87,22 @@ ax.set_xlabel("Steps")
 ax = axes[2, 1]
 for rwd_stat in [
     "gaussian_vel",
+    "gaussian_x_vel",
+    "gaussian_plateau_y_vel",
     "grf",
     "smooth_exc",
     "number_muscles",
     "joint_limit",
+    "self_contact",
+    "x_drift",
 ]:
-    ax.plot(
-        steps,
-        df[f"test/rwd_metrics/{rwd_stat}/mean"].to_numpy(),
-        label=rwd_stat,
-    )
+    col = f"test/rwd_metrics/{rwd_stat}/mean"
+    if col in df:
+        ax.plot(
+            steps,
+            df[col].to_numpy(),
+            label=rwd_stat,
+        )
 ax.set_title("Reward Components (Test)")
 ax.set_xlabel("Steps")
 ax.legend()

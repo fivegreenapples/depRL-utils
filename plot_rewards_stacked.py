@@ -31,8 +31,8 @@ rwd_metrics = [
     "forward_lean",
     "y_vel",
     "gaussian_vel",
-    "gaussian_vel_x",
-    "gaussian_vel_y",
+    "gaussian_x_vel",
+    "gaussian_plateau_y_vel",
     "sideways_lean",
 ]
 cost_metrics = [
@@ -42,6 +42,7 @@ cost_metrics = [
     "number_muscles",
     "smooth_exc",
     "self_contact",
+    "x_drift",
 ]
 test_rwd_cols = [f"test/rwd_metrics/{m}/mean" for m in rwd_metrics]
 test_cost_cols = [f"test/rwd_metrics/{m}/mean" for m in cost_metrics]
