@@ -95,6 +95,9 @@ for rwd_stat in [
     "joint_limit",
     "self_contact",
     "x_drift",
+    "gaussian_y_pos",
+    "stretched_gaussian_plateau_y_vel",
+    "plateau_y_vel",
 ]:
     col = f"test/rwd_metrics/{rwd_stat}/mean"
     if col in df:

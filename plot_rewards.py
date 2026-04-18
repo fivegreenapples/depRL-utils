@@ -43,6 +43,9 @@ rwd_metrics = [
     "smooth_exc",
     "self_contact",
     "x_drift",
+    "gaussian_y_pos",
+    "stretched_gaussian_plateau_y_vel",
+    "plateau_y_vel",
 ]
 
 rwd_data = [

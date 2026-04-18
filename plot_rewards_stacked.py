@@ -34,6 +34,9 @@ rwd_metrics = [
     "gaussian_x_vel",
     "gaussian_plateau_y_vel",
     "sideways_lean",
+    "gaussian_y_pos",
+    "stretched_gaussian_plateau_y_vel",
+    "plateau_y_vel",
 ]
 cost_metrics = [
     "done",
