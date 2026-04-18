@@ -11,6 +11,6 @@ fi
 
 for SERVER in "$@"; do
     echo $SERVER
-    ssh "$SERVER" "find depRL/build -mindepth 3 -maxdepth 3 -type d -printf '$SERVER %P\n'"
+    ssh "$SERVER" "find depRL/build/final -mindepth 2 -maxdepth 2 -type d -printf '$SERVER final/%P\n'"
     echo
 done
